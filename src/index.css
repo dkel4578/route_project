@@ -1,0 +1,45 @@
+/* 꼭 맨 위에 위치해야 함 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 그 아래에 기존 CSS 넣기 */
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+}
+
+/* a 태그 */
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+/* body */
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+/* AG Grid 헤더 커스텀 */
+.ag-theme-quartz .ag-header {
+  background-color: #1e293b;
+  color: #f1f5f9;
+  font-weight: 600;
+}
+.ag-theme-quartz .ag-header-cell {
+  border-right: 1px solid #334155;
+  padding: 8px;
+}
+.ag-theme-quartz .ag-header-cell:hover {
+  background-color: #334155;
+}
